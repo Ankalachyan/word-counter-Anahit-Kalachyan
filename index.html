@@ -27,11 +27,11 @@
       margin-bottom: 10px;
       border: 1px solid #ccc;
       border-radius: 4px;
-      resize: vertical; /* Allow vertical resizing of textarea */
+      resize: vertical; 
   }
 
   button {
-      background-color: #4CAF50; /* Green background */
+      background-color: #565756; 
       color: white;
       padding: 10px 20px;
       border: none;
@@ -39,11 +39,11 @@
       cursor: pointer;
       margin-bottom: 10px;
       display: block;
-      margin: 0 auto; /* Center the button horizontally */
+      margin: 0 auto; 
   }
 
   button:hover {
-      background-color: #45a049; /* Darker green on hover */
+      background-color: #252525; 
   }
 
   .result {
@@ -61,7 +61,7 @@
   </style>
 <body>
   <h1>Word Counter</h1>
-  <textarea id="userInput" placeholder="Enter your text here..."></textarea>
+  <textarea id="userInput" placeholder="Enter something"></textarea>
   <button onclick="analyzeText()">Analyze Text</button>
   <div class="result">
     <p><span class="metric" id="letterCount">0</span> letters</p>
@@ -69,8 +69,7 @@
     <p><span class="metric" id="sentenceCount">0</span> sentences</p>
   </div>
 
-  <input type="button" value="Change Color" onclick="ChangeColor()">
-
+<button onclick="ChangeColor()">Change Color</button>
 
   <script src="script.js"></script>
 </body>
